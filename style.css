@@ -1,9 +1,15 @@
 body {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+
+.mainarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .grid {
@@ -18,5 +24,4 @@ body {
     width: 20px;
     border: solid black;
     border-width: 1px;
-
 }
