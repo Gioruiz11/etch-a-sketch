@@ -1,5 +1,8 @@
 const grid = document.querySelector(".grid")
 
+// Calls grid creation function
+divGenerator();
+
 // Generates 16x16 grid
 function divGenerator(){
     let divSize = 16;
@@ -15,7 +18,17 @@ function divGenerator(){
 
 }
 
-divGenerator();
+
+
+
+// On mouseover, square turns black
+const squares = document.querySelectorAll(".square");
+squares.forEach((square) => {
+    square.addEventListener("mouseover", function(e) {
+        console.log(e);
+        e.target.style.background = "black";
+    })
+})
 
 
 
