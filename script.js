@@ -13,6 +13,7 @@ function gridCreator(size){
             newDiv.classList.add("square");
             newDiv.style.border = "1px solid gray";
             newDiv.style.flex = `1 1 ${squareSize}px`;
+            newDiv.style.backgroundColor = "white";
             newDiv.addEventListener("mouseover", () => {
             newDiv.style.backgroundColor = "black";
         })
