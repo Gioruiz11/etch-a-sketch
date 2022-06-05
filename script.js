@@ -18,9 +18,6 @@ function divGenerator(){
 
 }
 
-
-
-
 // On mouseover, square turns black
 const squares = document.querySelectorAll(".square");
 squares.forEach((square) => {
@@ -30,24 +27,17 @@ squares.forEach((square) => {
     })
 })
 
+// Prompt after clicking grid resize button
+function PromptMe(){
+    let size = prompt("Enter a grid size between 4-100!", 16);
+    return size;
+}
 
-// Get modal elements
-let modal = document.getElementById("myModal");
-let btn = document.getElementById("btn");
-let span = document.getElementsByClassName("close")[0];
-// When the button is pressed, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-// When the x or outside the modal is clicked, close the modal.
-span.onclick = function(){
-    modal.style.display = "none";
-}
-window.onclick = function(e) {
-    if(e.target == modal){
-        modal.style.display = "none";
-    }
-}
+
+
+
+
+
 
 
 
